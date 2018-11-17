@@ -1,0 +1,26 @@
+﻿@model StripeCoreClient.Controllers.ChargeViewModel
+
+@{
+    ViewData["Title"] = "Charge";
+}
+
+<h2>Charge</h2>
+
+<div>
+    <h4>Purchase is not completed</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StripeToken)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StripeToken)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StripeEmail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StripeEmail)
+        </dd>
+    </dl>
+</div>
